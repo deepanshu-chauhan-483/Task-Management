@@ -1,128 +1,93 @@
-🚀 Taskflow – Task Management Web Application
+# Taskflow – Task Management Web Application
 
 Taskflow is a full-stack task management web application that helps users efficiently create, track, filter, and manage their daily tasks. It is built with a modern tech stack focusing on scalability, clean architecture, and real-world production practices.
 
-✨ Features
-🔐 Authentication
+## Features
 
-User registration & login
+### Authentication
+- User registration and login
+- Secure authentication flow
+- Protected routes for authenticated users
 
-Secure authentication flow
+### Task Management
+- Create, update, and delete tasks
+- Mark tasks as completed or pending
+- Paginated task listing
+- Search tasks by title
+- Filter tasks by completion status
 
-Protected routes for authenticated users
+### Dashboard
+- Centralized dashboard for task management
+- Real-time updates after task actions
+- Clean and responsive UI
 
-✅ Task Management
+## Tech Stack
 
-Create, update, and delete tasks
+### Frontend
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Axios
+- React Context API (Authentication state)
 
-Mark tasks as completed or pending
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+- Prisma ORM
+- PostgreSQL
+- JWT Authentication
 
-Paginated task listing
+### Tooling & DevOps
+- Prisma Studio
+- RESTful API architecture
+- Environment-based configuration
+- Modular project structure
 
-Search tasks by title
+## Project Structure
 
-Filter tasks by completion status
 
-📊 Dashboard
+Taskflow/ │ ├── frontend/ │   ├── app/               # Next.js App Router │   ├── components/        # Reusable UI components │   ├── context/           # Auth context │   ├── lib/               # API helpers │   └── styles/            # Global styles │ ├── backend/ │   ├── modules/ │   │   ├── auth/          # Authentication logic │   │   └── tasks/         # Task CRUD operations │   ├── prisma/            # Prisma schema & migrations │   └── server.ts          # Express server entry │ └── README.md
 
-Centralized dashboard for task management
 
-Real-time updates after task actions
+## Environment Variables
 
-Clean and responsive UI
+### Backend (`backend/.env`)
 
-🧱 Tech Stack
-Frontend
+DATABASE_URL=postgresql://user:password@localhost:5432/taskflow JWT_SECRET=your_jwt_secret PORT=4000
 
-Next.js (App Router)
 
-TypeScript
+### Frontend (`frontend/.env.local`)
 
-Tailwind CSS
-
-Axios
-
-React Context API (Authentication state)
-
-Backend
-
-Node.js
-
-Express.js
-
-TypeScript
-
-Prisma ORM
-
-PostgreSQL
-
-JWT Authentication
-
-Tooling & DevOps
-
-Prisma Studio
-
-RESTful API architecture
-
-Environment-based configuration
-
-Modular project structure
-
-📂 Project Structure
-Taskflow/
-│
-├── frontend/
-│   ├── app/               # Next.js App Router
-│   ├── components/        # Reusable UI components
-│   ├── context/           # Auth context
-│   ├── lib/               # API helpers
-│   └── styles/            # Global styles
-│
-├── backend/
-│   ├── modules/
-│   │   ├── auth/           # Authentication logic
-│   │   └── tasks/          # Task CRUD operations
-│   ├── prisma/             # Prisma schema & migrations
-│   └── server.ts           # Express server entry
-│
-└── README.md
-
-⚙️ Environment Variables
-Backend (backend/.env)
-DATABASE_URL=postgresql://user:password@localhost:5432/taskflow
-JWT_SECRET=your_jwt_secret
-PORT=4000
-
-Frontend (frontend/.env.local)
 NEXT_PUBLIC_API_URL=http://localhost:4000
 
-🚀 Getting Started
-1️⃣ Clone the repository
+
+## Getting Started
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/taskflow.git
 cd taskflow
 
-2️⃣ Backend Setup
+2. Backend Setup
+
 cd backend
 npm install
 npx prisma migrate dev
 npm run dev
 
+Backend will run at: http://localhost:4000
 
-Backend will run at:
+3. Frontend Setup
 
-http://localhost:4000
-
-3️⃣ Frontend Setup
 cd frontend
 npm install
 npm run dev
 
+Frontend will run at: http://localhost:3000
 
-Frontend will run at:
+API Overview
 
-http://localhost:3000
-
-🧪 API Overview
 Auth
 
 POST /api/auth/register
@@ -139,7 +104,7 @@ PUT /api/tasks/:id
 
 DELETE /api/tasks/:id
 
-🔒 Security & Best Practices
+Security & Best Practices
 
 JWT-based authentication
 
@@ -151,25 +116,23 @@ Server-side validation
 
 Modular and scalable architecture
 
-🌱 Future Enhancements
+Future Enhancements
 
-Task categories & priorities
+Task categories and priorities
 
-Due dates & reminders
+Due dates and reminders
 
 Role-based access control
 
 Drag-and-drop task ordering
 
-Analytics & productivity insights
+Analytics and productivity insights
 
-👨‍💻 Author
+Author
 
-Deepanshu Chauhan
-Full Stack Developer
-Focused on building scalable, production-ready web applications.
+Deepanshu ChauhanFull Stack DeveloperFocused on building scalable, production-ready web applications.
 
-⭐ Acknowledgements
+Acknowledgements
 
 Next.js
 
