@@ -1,5 +1,5 @@
 
-# Taskflow – Task Management Web Application
+# Taskflow – Task Management Web Application (Submission for Earnest Fintech Ltd.)
 
 Taskflow is a full-stack task management web application that helps users efficiently create, track, filter, and manage their daily tasks. It is built with a modern tech stack focusing on scalability, clean architecture, and real-world production practices.
 
@@ -167,9 +167,4 @@ Focused on building scalable, production-ready web applications.
 * Tailwind CSS
 * Express.js
 
-```
-
-
-
-Just tell me — happy to polish it further.
 ```
